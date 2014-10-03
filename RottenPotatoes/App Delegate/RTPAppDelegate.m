@@ -16,10 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //-- Settings proxies
-    [UINavigationBar appearance].barTintColor = [UIColor RTPGrayStrong];
+    [UINavigationBar appearance].barTintColor        = [UIColor RTPGrayStrong];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    [UIRefreshControl appearance].tintColor   = [UIColor grayWithRGB:200.f];
-//    [UISearchBar appearance].backgroundImage  
+    [UIRefreshControl appearance].tintColor          = [UIColor grayWithRGB:200.f];
     return YES;
 }
 							
