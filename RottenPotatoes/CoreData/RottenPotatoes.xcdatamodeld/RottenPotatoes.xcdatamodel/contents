@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CastMember" representedClassName="CastMember" syncable="YES">
+        <attribute name="characters" optional="YES" attributeType="Transformable" valueTransformerName="RTPTransformer" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="distantId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Movie" inverseName="relationship" inverseEntity="Movie" syncable="YES"/>
+    </entity>
+    <entity name="Movie" representedClassName="Movie" syncable="YES">
+        <attribute name="abridgedDirectors" optional="YES" attributeType="Transformable" valueTransformerName="RTPTransformer" syncable="YES"/>
+        <attribute name="audienceRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="audienceScore" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="criticsConsensus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="criticsRating" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="criticsScore" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="distantId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genre" optional="YES" attributeType="Transformable" valueTransformerName="RTPTransformer" syncable="YES"/>
+        <attribute name="imdbId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="links" optional="YES" attributeType="Transformable" valueTransformerName="RTPTransformer" syncable="YES"/>
+        <attribute name="mpaaRating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="posters" optional="YES" attributeType="Transformable" valueTransformerName="RTPTransformer" syncable="YES"/>
+        <attribute name="releaseDvd" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="releaseTheater" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="runtime" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="studio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="synopsis" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="year" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="relationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CastMember" inverseName="relationship" inverseEntity="CastMember" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CastMember" positionX="-2351" positionY="-72" width="128" height="118"/>
+        <element name="Movie" positionX="-1901" positionY="-136" width="128" height="358"/>
+    </elements>
+</model>

@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3002261E19C14F1500933612 /* RTPSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002261D19C14F1500933612 /* RTPSearchBar.m */; };
+		301B902C19AEE82400B296D8 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B902B19AEE82400B296D8 /* Movie.m */; };
+		301B902F19AEE82500B296D8 /* CastMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B902E19AEE82500B296D8 /* CastMember.m */; };
+		301B903519AEE93200B296D8 /* RTPModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B903219AEE93200B296D8 /* RTPModelManager.m */; };
+		301B903619AEE93200B296D8 /* RTPMovieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 301B903419AEE93200B296D8 /* RTPMovieManager.m */; };
+		301F471D19DBA8D1003B077F /* RTPMoreDetailMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 301F471C19DBA8D1003B077F /* RTPMoreDetailMovieView.m */; };
+		309043C819B421FE00AF0D9B /* RTPMovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043C719B421FE00AF0D9B /* RTPMovieListView.m */; };
+		309043CC19B4243D00AF0D9B /* RTPDesignConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043CB19B4243D00AF0D9B /* RTPDesignConsts.m */; };
+		309043DB19B4266200AF0D9B /* NSArray+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043D019B4266200AF0D9B /* NSArray+Sugar.m */; };
+		309043DC19B4266200AF0D9B /* NSDictionary+Sugar.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043D219B4266200AF0D9B /* NSDictionary+Sugar.m */; };
+		309043DD19B4266200AF0D9B /* NSDictionary+TypeCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043D419B4266200AF0D9B /* NSDictionary+TypeCheck.m */; };
+		309043DE19B4266200AF0D9B /* NSString+SerializeToDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043D619B4266200AF0D9B /* NSString+SerializeToDate.m */; };
+		309043DF19B4266200AF0D9B /* RTPUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043D819B4266200AF0D9B /* RTPUrlBuilder.m */; };
+		309043E019B4266200AF0D9B /* RTPWebServiceDialogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043DA19B4266200AF0D9B /* RTPWebServiceDialogManager.m */; };
+		309043E319B4267400AF0D9B /* UIColor+RTPColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 309043E219B4267400AF0D9B /* UIColor+RTPColors.m */; };
+		3092018219B6CA4300E55F0A /* RTPMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092018119B6CA4300E55F0A /* RTPMovieCell.m */; };
+		3092018519BBCF5000E55F0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3092018419BBCF5000E55F0A /* Images.xcassets */; };
+		3092018B19BBD0F900E55F0A /* Casper_B_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092018719BBD0F900E55F0A /* Casper_B_It.ttf */; };
+		3092018C19BBD0F900E55F0A /* Casper_B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092018819BBD0F900E55F0A /* Casper_B.ttf */; };
+		3092018D19BBD0F900E55F0A /* Casper_It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092018919BBD0F900E55F0A /* Casper_It.ttf */; };
+		3092018E19BBD0F900E55F0A /* Casper_R.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092018A19BBD0F900E55F0A /* Casper_R.ttf */; };
+		3092019119BBD13900E55F0A /* UIFont+RTPFonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092019019BBD13900E55F0A /* UIFont+RTPFonts.m */; };
+		3092019419BBF2A800E55F0A /* RTPSearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3092019319BBF2A800E55F0A /* RTPSearchHeaderView.m */; };
+		3095EF4B19CA87E60014BBB1 /* RTPMovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3095EF4A19CA87E60014BBB1 /* RTPMovieDetailViewController.m */; };
+		309E17E219CB9FF90069D12F /* RTPDetailMovieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 309E17E119CB9FF90069D12F /* RTPDetailMovieView.m */; };
+		309E17E519CBA6C00069D12F /* UIImageView+RTPDownloadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 309E17E419CBA6C00069D12F /* UIImageView+RTPDownloadImage.m */; };
+		30F2619F19A13CC800CDDEDA /* RTPMovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F2619E19A13CC800CDDEDA /* RTPMovieListViewController.m */; };
+		7A1D97CA1990DC780075B2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97C91990DC780075B2B5 /* Foundation.framework */; };
+		7A1D97CC1990DC780075B2B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97CB1990DC780075B2B5 /* CoreGraphics.framework */; };
+		7A1D97CE1990DC780075B2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97CD1990DC780075B2B5 /* UIKit.framework */; };
+		7A1D97D41990DC780075B2B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D97D21990DC780075B2B5 /* InfoPlist.strings */; };
+		7A1D97D61990DC780075B2B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D97D51990DC780075B2B5 /* main.m */; };
+		7A1D97DA1990DC780075B2B5 /* RTPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D97D91990DC780075B2B5 /* RTPAppDelegate.m */; };
+		7A1D97DD1990DC780075B2B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D97DB1990DC780075B2B5 /* Main.storyboard */; };
+		7A1D97E91990DC780075B2B5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97E81990DC780075B2B5 /* XCTest.framework */; };
+		7A1D97EA1990DC780075B2B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97C91990DC780075B2B5 /* Foundation.framework */; };
+		7A1D97EB1990DC780075B2B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1D97CD1990DC780075B2B5 /* UIKit.framework */; };
+		7A1D97F31990DC780075B2B5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A1D97F11990DC780075B2B5 /* InfoPlist.strings */; };
+		7A1D97F51990DC780075B2B5 /* RottenPotatoesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A1D97F41990DC780075B2B5 /* RottenPotatoesTests.m */; };
+		7A2DE41E19938D4A006F5374 /* NSManagedObject+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DE41D19938D4A006F5374 /* NSManagedObject+Helper.m */; };
+		7A5EF73C1990E3E10032B52D /* RTPStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A5EF73B1990E3E10032B52D /* RTPStoreManager.m */; };
+		7A5EF73E1990E6800032B52D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EF73D1990E6800032B52D /* CoreData.framework */; };
+		7AAA682F19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA682D19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld */; };
+		7AAA683519927A540048D2E5 /* RTPTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA683419927A540048D2E5 /* RTPTransformer.m */; };
+		7AAA684A199293BE0048D2E5 /* RTPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A1D97EC1990DC780075B2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A1D97BE1990DC780075B2B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A1D97C51990DC780075B2B5;
+			remoteInfo = RottenPotatoes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3002261C19C14F1500933612 /* RTPSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPSearchBar.h; sourceTree = "<group>"; };
+		3002261D19C14F1500933612 /* RTPSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPSearchBar.m; sourceTree = "<group>"; };
+		301B902A19AEE82400B296D8 /* Movie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		301B902B19AEE82400B296D8 /* Movie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
+		301B902D19AEE82500B296D8 /* CastMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CastMember.h; sourceTree = "<group>"; };
+		301B902E19AEE82500B296D8 /* CastMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CastMember.m; sourceTree = "<group>"; };
+		301B903119AEE93200B296D8 /* RTPModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPModelManager.h; sourceTree = "<group>"; };
+		301B903219AEE93200B296D8 /* RTPModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPModelManager.m; sourceTree = "<group>"; };
+		301B903319AEE93200B296D8 /* RTPMovieManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMovieManager.h; sourceTree = "<group>"; };
+		301B903419AEE93200B296D8 /* RTPMovieManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMovieManager.m; sourceTree = "<group>"; };
+		301F471B19DBA8D1003B077F /* RTPMoreDetailMovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMoreDetailMovieView.h; sourceTree = "<group>"; };
+		301F471C19DBA8D1003B077F /* RTPMoreDetailMovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMoreDetailMovieView.m; sourceTree = "<group>"; };
+		309043C619B421FE00AF0D9B /* RTPMovieListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMovieListView.h; sourceTree = "<group>"; };
+		309043C719B421FE00AF0D9B /* RTPMovieListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMovieListView.m; sourceTree = "<group>"; };
+		309043CA19B4243D00AF0D9B /* RTPDesignConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPDesignConsts.h; sourceTree = "<group>"; };
+		309043CB19B4243D00AF0D9B /* RTPDesignConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPDesignConsts.m; sourceTree = "<group>"; };
+		309043CF19B4266200AF0D9B /* NSArray+Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sugar.h"; sourceTree = "<group>"; };
+		309043D019B4266200AF0D9B /* NSArray+Sugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sugar.m"; sourceTree = "<group>"; };
+		309043D119B4266200AF0D9B /* NSDictionary+Sugar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Sugar.h"; sourceTree = "<group>"; };
+		309043D219B4266200AF0D9B /* NSDictionary+Sugar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Sugar.m"; sourceTree = "<group>"; };
+		309043D319B4266200AF0D9B /* NSDictionary+TypeCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+TypeCheck.h"; sourceTree = "<group>"; };
+		309043D419B4266200AF0D9B /* NSDictionary+TypeCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+TypeCheck.m"; sourceTree = "<group>"; };
+		309043D519B4266200AF0D9B /* NSString+SerializeToDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SerializeToDate.h"; sourceTree = "<group>"; };
+		309043D619B4266200AF0D9B /* NSString+SerializeToDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SerializeToDate.m"; sourceTree = "<group>"; };
+		309043D719B4266200AF0D9B /* RTPUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPUrlBuilder.h; sourceTree = "<group>"; };
+		309043D819B4266200AF0D9B /* RTPUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPUrlBuilder.m; sourceTree = "<group>"; };
+		309043D919B4266200AF0D9B /* RTPWebServiceDialogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPWebServiceDialogManager.h; sourceTree = "<group>"; };
+		309043DA19B4266200AF0D9B /* RTPWebServiceDialogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPWebServiceDialogManager.m; sourceTree = "<group>"; };
+		309043E119B4267400AF0D9B /* UIColor+RTPColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RTPColors.h"; sourceTree = "<group>"; };
+		309043E219B4267400AF0D9B /* UIColor+RTPColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RTPColors.m"; sourceTree = "<group>"; };
+		3092018019B6CA4300E55F0A /* RTPMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMovieCell.h; sourceTree = "<group>"; };
+		3092018119B6CA4300E55F0A /* RTPMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMovieCell.m; sourceTree = "<group>"; };
+		3092018419BBCF5000E55F0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3092018719BBD0F900E55F0A /* Casper_B_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Casper_B_It.ttf; sourceTree = "<group>"; };
+		3092018819BBD0F900E55F0A /* Casper_B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Casper_B.ttf; sourceTree = "<group>"; };
+		3092018919BBD0F900E55F0A /* Casper_It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Casper_It.ttf; sourceTree = "<group>"; };
+		3092018A19BBD0F900E55F0A /* Casper_R.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Casper_R.ttf; sourceTree = "<group>"; };
+		3092018F19BBD13900E55F0A /* UIFont+RTPFonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+RTPFonts.h"; sourceTree = "<group>"; };
+		3092019019BBD13900E55F0A /* UIFont+RTPFonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+RTPFonts.m"; sourceTree = "<group>"; };
+		3092019219BBF2A800E55F0A /* RTPSearchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPSearchHeaderView.h; sourceTree = "<group>"; };
+		3092019319BBF2A800E55F0A /* RTPSearchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPSearchHeaderView.m; sourceTree = "<group>"; };
+		3095EF4919CA87E60014BBB1 /* RTPMovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMovieDetailViewController.h; sourceTree = "<group>"; };
+		3095EF4A19CA87E60014BBB1 /* RTPMovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMovieDetailViewController.m; sourceTree = "<group>"; };
+		309E17E019CB9FF90069D12F /* RTPDetailMovieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPDetailMovieView.h; sourceTree = "<group>"; };
+		309E17E119CB9FF90069D12F /* RTPDetailMovieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPDetailMovieView.m; sourceTree = "<group>"; };
+		309E17E319CBA6C00069D12F /* UIImageView+RTPDownloadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RTPDownloadImage.h"; sourceTree = "<group>"; };
+		309E17E419CBA6C00069D12F /* UIImageView+RTPDownloadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RTPDownloadImage.m"; sourceTree = "<group>"; };
+		30F2619D19A13CC800CDDEDA /* RTPMovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPMovieListViewController.h; sourceTree = "<group>"; };
+		30F2619E19A13CC800CDDEDA /* RTPMovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPMovieListViewController.m; sourceTree = "<group>"; };
+		7A1D97C61990DC780075B2B5 /* RottenPotatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenPotatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1D97C91990DC780075B2B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7A1D97CB1990DC780075B2B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7A1D97CD1990DC780075B2B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7A1D97D11990DC780075B2B5 /* RottenPotatoes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenPotatoes-Info.plist"; sourceTree = "<group>"; };
+		7A1D97D31990DC780075B2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A1D97D51990DC780075B2B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7A1D97D71990DC780075B2B5 /* RottenPotatoes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenPotatoes-Prefix.pch"; sourceTree = "<group>"; };
+		7A1D97D81990DC780075B2B5 /* RTPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTPAppDelegate.h; sourceTree = "<group>"; };
+		7A1D97D91990DC780075B2B5 /* RTPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTPAppDelegate.m; sourceTree = "<group>"; };
+		7A1D97DC1990DC780075B2B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A1D97E71990DC780075B2B5 /* RottenPotatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenPotatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1D97E81990DC780075B2B5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7A1D97F01990DC780075B2B5 /* RottenPotatoesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RottenPotatoesTests-Info.plist"; sourceTree = "<group>"; };
+		7A1D97F21990DC780075B2B5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A1D97F41990DC780075B2B5 /* RottenPotatoesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenPotatoesTests.m; sourceTree = "<group>"; };
+		7A2DE41C19938D4A006F5374 /* NSManagedObject+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Helper.h"; sourceTree = "<group>"; };
+		7A2DE41D19938D4A006F5374 /* NSManagedObject+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Helper.m"; sourceTree = "<group>"; };
+		7A58C62719911AD90003A187 /* DebugMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugMacro.h; sourceTree = "<group>"; };
+		7A5EF73A1990E3E10032B52D /* RTPStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPStoreManager.h; sourceTree = "<group>"; };
+		7A5EF73B1990E3E10032B52D /* RTPStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPStoreManager.m; sourceTree = "<group>"; };
+		7A5EF73D1990E6800032B52D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7AAA682E19922E3E0048D2E5 /* RottenPotatoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RottenPotatoes.xcdatamodel; sourceTree = "<group>"; };
+		7AAA683319927A540048D2E5 /* RTPTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPTransformer.h; sourceTree = "<group>"; };
+		7AAA683419927A540048D2E5 /* RTPTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPTransformer.m; sourceTree = "<group>"; };
+		7AAA6848199293BE0048D2E5 /* RTPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPCoreDataManager.h; sourceTree = "<group>"; };
+		7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPCoreDataManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A1D97C31990DC780075B2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A5EF73E1990E6800032B52D /* CoreData.framework in Frameworks */,
+				7A1D97CC1990DC780075B2B5 /* CoreGraphics.framework in Frameworks */,
+				7A1D97CE1990DC780075B2B5 /* UIKit.framework in Frameworks */,
+				7A1D97CA1990DC780075B2B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A1D97E41990DC780075B2B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1D97E91990DC780075B2B5 /* XCTest.framework in Frameworks */,
+				7A1D97EB1990DC780075B2B5 /* UIKit.framework in Frameworks */,
+				7A1D97EA1990DC780075B2B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		301B902919AEE81C00B296D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				301B902D19AEE82500B296D8 /* CastMember.h */,
+				301B902E19AEE82500B296D8 /* CastMember.m */,
+				301B902A19AEE82400B296D8 /* Movie.h */,
+				301B902B19AEE82400B296D8 /* Movie.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		301B903019AEE93200B296D8 /* ModelsManager */ = {
+			isa = PBXGroup;
+			children = (
+				301B903119AEE93200B296D8 /* RTPModelManager.h */,
+				301B903219AEE93200B296D8 /* RTPModelManager.m */,
+				301B903319AEE93200B296D8 /* RTPMovieManager.h */,
+				301B903419AEE93200B296D8 /* RTPMovieManager.m */,
+			);
+			path = ModelsManager;
+			sourceTree = "<group>";
+		};
+		309043CD19B4266200AF0D9B /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				309043E119B4267400AF0D9B /* UIColor+RTPColors.h */,
+				309043E219B4267400AF0D9B /* UIColor+RTPColors.m */,
+				3092018F19BBD13900E55F0A /* UIFont+RTPFonts.h */,
+				3092019019BBD13900E55F0A /* UIFont+RTPFonts.m */,
+				3002261C19C14F1500933612 /* RTPSearchBar.h */,
+				3002261D19C14F1500933612 /* RTPSearchBar.m */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		309043CE19B4266200AF0D9B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				309043CF19B4266200AF0D9B /* NSArray+Sugar.h */,
+				309043D019B4266200AF0D9B /* NSArray+Sugar.m */,
+				309043D119B4266200AF0D9B /* NSDictionary+Sugar.h */,
+				309043D219B4266200AF0D9B /* NSDictionary+Sugar.m */,
+				309043D319B4266200AF0D9B /* NSDictionary+TypeCheck.h */,
+				309043D419B4266200AF0D9B /* NSDictionary+TypeCheck.m */,
+				309043D519B4266200AF0D9B /* NSString+SerializeToDate.h */,
+				309043D619B4266200AF0D9B /* NSString+SerializeToDate.m */,
+				309043D719B4266200AF0D9B /* RTPUrlBuilder.h */,
+				309043D819B4266200AF0D9B /* RTPUrlBuilder.m */,
+				309043D919B4266200AF0D9B /* RTPWebServiceDialogManager.h */,
+				309043DA19B4266200AF0D9B /* RTPWebServiceDialogManager.m */,
+				309E17E319CBA6C00069D12F /* UIImageView+RTPDownloadImage.h */,
+				309E17E419CBA6C00069D12F /* UIImageView+RTPDownloadImage.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3092018319BBCE4800E55F0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3092018419BBCF5000E55F0A /* Images.xcassets */,
+				3092018619BBCF5C00E55F0A /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3092018619BBCF5C00E55F0A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3092018719BBD0F900E55F0A /* Casper_B_It.ttf */,
+				3092018819BBD0F900E55F0A /* Casper_B.ttf */,
+				3092018919BBD0F900E55F0A /* Casper_It.ttf */,
+				3092018A19BBD0F900E55F0A /* Casper_R.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		30F2619A19A13C3C00CDDEDA /* View Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				309043CA19B4243D00AF0D9B /* RTPDesignConsts.h */,
+				309043CB19B4243D00AF0D9B /* RTPDesignConsts.m */,
+				30F2619B19A13C9600CDDEDA /* MovieDetailVC */,
+				30F2619C19A13C9600CDDEDA /* MovieListVC */,
+			);
+			path = "View Contollers";
+			sourceTree = "<group>";
+		};
+		30F2619B19A13C9600CDDEDA /* MovieDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				3095EF4919CA87E60014BBB1 /* RTPMovieDetailViewController.h */,
+				3095EF4A19CA87E60014BBB1 /* RTPMovieDetailViewController.m */,
+				309E17E019CB9FF90069D12F /* RTPDetailMovieView.h */,
+				309E17E119CB9FF90069D12F /* RTPDetailMovieView.m */,
+				301F471B19DBA8D1003B077F /* RTPMoreDetailMovieView.h */,
+				301F471C19DBA8D1003B077F /* RTPMoreDetailMovieView.m */,
+			);
+			path = MovieDetailVC;
+			sourceTree = "<group>";
+		};
+		30F2619C19A13C9600CDDEDA /* MovieListVC */ = {
+			isa = PBXGroup;
+			children = (
+				30F2619D19A13CC800CDDEDA /* RTPMovieListViewController.h */,
+				30F2619E19A13CC800CDDEDA /* RTPMovieListViewController.m */,
+				309043C619B421FE00AF0D9B /* RTPMovieListView.h */,
+				309043C719B421FE00AF0D9B /* RTPMovieListView.m */,
+				3092018019B6CA4300E55F0A /* RTPMovieCell.h */,
+				3092018119B6CA4300E55F0A /* RTPMovieCell.m */,
+				3092019219BBF2A800E55F0A /* RTPSearchHeaderView.h */,
+				3092019319BBF2A800E55F0A /* RTPSearchHeaderView.m */,
+			);
+			path = MovieListVC;
+			sourceTree = "<group>";
+		};
+		7A1D97BD1990DC780075B2B5 = {
+			isa = PBXGroup;
+			children = (
+				7A1D97CF1990DC780075B2B5 /* RottenPotatoes */,
+				7A1D97EE1990DC780075B2B5 /* RottenPotatoesTests */,
+				7A1D97C81990DC780075B2B5 /* Frameworks */,
+				7A1D97C71990DC780075B2B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A1D97C71990DC780075B2B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A1D97C61990DC780075B2B5 /* RottenPotatoes.app */,
+				7A1D97E71990DC780075B2B5 /* RottenPotatoesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A1D97C81990DC780075B2B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A5EF73D1990E6800032B52D /* CoreData.framework */,
+				7A1D97C91990DC780075B2B5 /* Foundation.framework */,
+				7A1D97CB1990DC780075B2B5 /* CoreGraphics.framework */,
+				7A1D97CD1990DC780075B2B5 /* UIKit.framework */,
+				7A1D97E81990DC780075B2B5 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A1D97CF1990DC780075B2B5 /* RottenPotatoes */ = {
+			isa = PBXGroup;
+			children = (
+				3092018319BBCE4800E55F0A /* Resources */,
+				7AAAAD0E199507D7002A1B10 /* Toolbox */,
+				7A58C62619911AA80003A187 /* Debug */,
+				7A5EF7391990E1900032B52D /* CoreData */,
+				7A1D97D81990DC780075B2B5 /* RTPAppDelegate.h */,
+				7A1D97D91990DC780075B2B5 /* RTPAppDelegate.m */,
+				7A1D97DB1990DC780075B2B5 /* Main.storyboard */,
+				30F2619A19A13C3C00CDDEDA /* View Contollers */,
+				7A1D97D01990DC780075B2B5 /* Supporting Files */,
+			);
+			path = RottenPotatoes;
+			sourceTree = "<group>";
+		};
+		7A1D97D01990DC780075B2B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1D97D11990DC780075B2B5 /* RottenPotatoes-Info.plist */,
+				7A1D97D21990DC780075B2B5 /* InfoPlist.strings */,
+				7A1D97D51990DC780075B2B5 /* main.m */,
+				7A1D97D71990DC780075B2B5 /* RottenPotatoes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A1D97EE1990DC780075B2B5 /* RottenPotatoesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A1D97F41990DC780075B2B5 /* RottenPotatoesTests.m */,
+				7A1D97EF1990DC780075B2B5 /* Supporting Files */,
+			);
+			path = RottenPotatoesTests;
+			sourceTree = "<group>";
+		};
+		7A1D97EF1990DC780075B2B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A1D97F01990DC780075B2B5 /* RottenPotatoesTests-Info.plist */,
+				7A1D97F11990DC780075B2B5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A58C62619911AA80003A187 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				7A58C62719911AD90003A187 /* DebugMacro.h */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		7A5EF7391990E1900032B52D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				301B903019AEE93200B296D8 /* ModelsManager */,
+				301B902919AEE81C00B296D8 /* Models */,
+				7A5EF73A1990E3E10032B52D /* RTPStoreManager.h */,
+				7A5EF73B1990E3E10032B52D /* RTPStoreManager.m */,
+				7AAA682D19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld */,
+				7AAA683319927A540048D2E5 /* RTPTransformer.h */,
+				7AAA683419927A540048D2E5 /* RTPTransformer.m */,
+				7AAA6848199293BE0048D2E5 /* RTPCoreDataManager.h */,
+				7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */,
+				7A2DE41C19938D4A006F5374 /* NSManagedObject+Helper.h */,
+				7A2DE41D19938D4A006F5374 /* NSManagedObject+Helper.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		7AAAAD0E199507D7002A1B10 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				309043CD19B4266200AF0D9B /* Design */,
+				309043CE19B4266200AF0D9B /* Utility */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A1D97C51990DC780075B2B5 /* RottenPotatoes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1D97F81990DC780075B2B5 /* Build configuration list for PBXNativeTarget "RottenPotatoes" */;
+			buildPhases = (
+				7A1D97C21990DC780075B2B5 /* Sources */,
+				7A1D97C31990DC780075B2B5 /* Frameworks */,
+				7A1D97C41990DC780075B2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RottenPotatoes;
+			productName = RottenPotatoes;
+			productReference = 7A1D97C61990DC780075B2B5 /* RottenPotatoes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A1D97E61990DC780075B2B5 /* RottenPotatoesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A1D97FB1990DC780075B2B5 /* Build configuration list for PBXNativeTarget "RottenPotatoesTests" */;
+			buildPhases = (
+				7A1D97E31990DC780075B2B5 /* Sources */,
+				7A1D97E41990DC780075B2B5 /* Frameworks */,
+				7A1D97E51990DC780075B2B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A1D97ED1990DC780075B2B5 /* PBXTargetDependency */,
+			);
+			name = RottenPotatoesTests;
+			productName = RottenPotatoesTests;
+			productReference = 7A1D97E71990DC780075B2B5 /* RottenPotatoesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A1D97BE1990DC780075B2B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RTP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Romain Bousquet";
+				TargetAttributes = {
+					7A1D97E61990DC780075B2B5 = {
+						TestTargetID = 7A1D97C51990DC780075B2B5;
+					};
+				};
+			};
+			buildConfigurationList = 7A1D97C11990DC780075B2B5 /* Build configuration list for PBXProject "RottenPotatoes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A1D97BD1990DC780075B2B5;
+			productRefGroup = 7A1D97C71990DC780075B2B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A1D97C51990DC780075B2B5 /* RottenPotatoes */,
+				7A1D97E61990DC780075B2B5 /* RottenPotatoesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A1D97C41990DC780075B2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3092018B19BBD0F900E55F0A /* Casper_B_It.ttf in Resources */,
+				3092018C19BBD0F900E55F0A /* Casper_B.ttf in Resources */,
+				3092018D19BBD0F900E55F0A /* Casper_It.ttf in Resources */,
+				3092018E19BBD0F900E55F0A /* Casper_R.ttf in Resources */,
+				3092018519BBCF5000E55F0A /* Images.xcassets in Resources */,
+				7A1D97D41990DC780075B2B5 /* InfoPlist.strings in Resources */,
+				7A1D97DD1990DC780075B2B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A1D97E51990DC780075B2B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1D97F31990DC780075B2B5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A1D97C21990DC780075B2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301B902F19AEE82500B296D8 /* CastMember.m in Sources */,
+				309043DD19B4266200AF0D9B /* NSDictionary+TypeCheck.m in Sources */,
+				7AAA683519927A540048D2E5 /* RTPTransformer.m in Sources */,
+				301B902C19AEE82400B296D8 /* Movie.m in Sources */,
+				309043DC19B4266200AF0D9B /* NSDictionary+Sugar.m in Sources */,
+				3092019119BBD13900E55F0A /* UIFont+RTPFonts.m in Sources */,
+				309043DF19B4266200AF0D9B /* RTPUrlBuilder.m in Sources */,
+				7A1D97D61990DC780075B2B5 /* main.m in Sources */,
+				309043DB19B4266200AF0D9B /* NSArray+Sugar.m in Sources */,
+				309043DE19B4266200AF0D9B /* NSString+SerializeToDate.m in Sources */,
+				7AAA684A199293BE0048D2E5 /* RTPCoreDataManager.m in Sources */,
+				301B903619AEE93200B296D8 /* RTPMovieManager.m in Sources */,
+				3002261E19C14F1500933612 /* RTPSearchBar.m in Sources */,
+				309043C819B421FE00AF0D9B /* RTPMovieListView.m in Sources */,
+				301F471D19DBA8D1003B077F /* RTPMoreDetailMovieView.m in Sources */,
+				7A2DE41E19938D4A006F5374 /* NSManagedObject+Helper.m in Sources */,
+				3092018219B6CA4300E55F0A /* RTPMovieCell.m in Sources */,
+				30F2619F19A13CC800CDDEDA /* RTPMovieListViewController.m in Sources */,
+				309E17E519CBA6C00069D12F /* UIImageView+RTPDownloadImage.m in Sources */,
+				3092019419BBF2A800E55F0A /* RTPSearchHeaderView.m in Sources */,
+				7A1D97DA1990DC780075B2B5 /* RTPAppDelegate.m in Sources */,
+				7AAA682F19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld in Sources */,
+				309E17E219CB9FF90069D12F /* RTPDetailMovieView.m in Sources */,
+				301B903519AEE93200B296D8 /* RTPModelManager.m in Sources */,
+				309043CC19B4243D00AF0D9B /* RTPDesignConsts.m in Sources */,
+				7A5EF73C1990E3E10032B52D /* RTPStoreManager.m in Sources */,
+				3095EF4B19CA87E60014BBB1 /* RTPMovieDetailViewController.m in Sources */,
+				309043E319B4267400AF0D9B /* UIColor+RTPColors.m in Sources */,
+				309043E019B4266200AF0D9B /* RTPWebServiceDialogManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A1D97E31990DC780075B2B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1D97F51990DC780075B2B5 /* RottenPotatoesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A1D97ED1990DC780075B2B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A1D97C51990DC780075B2B5 /* RottenPotatoes */;
+			targetProxy = 7A1D97EC1990DC780075B2B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A1D97D21990DC780075B2B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1D97D31990DC780075B2B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7A1D97DB1990DC780075B2B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1D97DC1990DC780075B2B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7A1D97F11990DC780075B2B5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A1D97F21990DC780075B2B5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A1D97F61990DC780075B2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7A1D97F71990DC780075B2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A1D97F91990DC780075B2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenPotatoes/RottenPotatoes-Prefix.pch";
+				INFOPLIST_FILE = "RottenPotatoes/RottenPotatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7A1D97FA1990DC780075B2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenPotatoes/RottenPotatoes-Prefix.pch";
+				INFOPLIST_FILE = "RottenPotatoes/RottenPotatoes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7A1D97FC1990DC780075B2B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RottenPotatoes.app/RottenPotatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenPotatoes/RottenPotatoes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RottenPotatoesTests/RottenPotatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7A1D97FD1990DC780075B2B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RottenPotatoes.app/RottenPotatoes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RottenPotatoes/RottenPotatoes-Prefix.pch";
+				INFOPLIST_FILE = "RottenPotatoesTests/RottenPotatoesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A1D97C11990DC780075B2B5 /* Build configuration list for PBXProject "RottenPotatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1D97F61990DC780075B2B5 /* Debug */,
+				7A1D97F71990DC780075B2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1D97F81990DC780075B2B5 /* Build configuration list for PBXNativeTarget "RottenPotatoes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1D97F91990DC780075B2B5 /* Debug */,
+				7A1D97FA1990DC780075B2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A1D97FB1990DC780075B2B5 /* Build configuration list for PBXNativeTarget "RottenPotatoesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A1D97FC1990DC780075B2B5 /* Debug */,
+				7A1D97FD1990DC780075B2B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AAA682D19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AAA682E19922E3E0048D2E5 /* RottenPotatoes.xcdatamodel */,
+			);
+			currentVersion = 7AAA682E19922E3E0048D2E5 /* RottenPotatoes.xcdatamodel */;
+			path = RottenPotatoes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A1D97BE1990DC780075B2B5 /* Project object */;
+}
