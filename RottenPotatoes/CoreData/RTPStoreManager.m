@@ -1,5 +1,5 @@
 //
-//  RTPCoreDataManager.m
+//  RTPStoreManager.m
 //  RottenPotatoes
 //
 //  Created by Romain Bousquet on 05/08/2014.

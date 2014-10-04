@@ -69,18 +69,16 @@
 
 - (void)toDetails
 {
-    [UIView animateWithDuration:0.7f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.4f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.tankView.frame = detailsFrame;
-    } completion:^(BOOL finished) {
-    }];
+    } completion:nil];
 }
 
 - (void)toMoreDetails
 {
-    [UIView animateWithDuration:0.7f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.4f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.tankView.frame = moreDetailsFrame;
-    } completion:^(BOOL finished) {
-    }];
+    } completion:nil];
 }
 
 #pragma mark - RTPDetailMovieDelegate

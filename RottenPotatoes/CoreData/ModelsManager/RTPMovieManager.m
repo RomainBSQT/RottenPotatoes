@@ -65,9 +65,9 @@ static CGFloat const kTimeRefresh = 3600.f * 24.f; //- one day
 {
     [[RTPWebServiceDialogManager sharedInstance] GETWithUrlType:RTPUrlTypeBoxOffice params:nil completion:^(BOOL success, NSDictionary *reponse) {
         if (success) {
-            for (NSDictionary *movie in reponse[@"movies"]) {
-                [self p_serializeObject:movie];
-            }
+            [((NSArray *)reponse[@"movies"]) each:^(id obj) {
+                [self p_serializeObject:obj];
+            }];
             self.lastUpdate = [NSDate date];
             [self p_getLocalMovies:completionHandler];
         } else {

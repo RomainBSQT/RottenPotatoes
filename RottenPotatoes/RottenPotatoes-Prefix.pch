@@ -14,8 +14,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "DebugMacro.h"
-    #import "NSDictionary+Sugar.h"
-    #import "NSArray+Sugar.h"
     #import "UIColor+RTPColors.h"
     #import "UIFont+RTPFonts.h"
+    #import "NSDictionary+Sugar.h"
+    #import "NSArray+Sugar.h"
 #endif

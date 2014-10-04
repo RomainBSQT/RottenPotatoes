@@ -26,7 +26,6 @@
             [array addObject:object];
         }
     }];
-
     return array;
 }
 

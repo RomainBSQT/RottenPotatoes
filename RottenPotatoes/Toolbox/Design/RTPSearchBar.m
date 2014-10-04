@@ -26,7 +26,7 @@
 - (void)layoutSubviews
 {
     UITextField *txtSearchField = [self valueForKey:@"_searchField"];
-    txtSearchField.tintColor       = [UIColor blackColor];
+    txtSearchField.tintColor = [UIColor blackColor];
     for (UIView *view in [self subviews]) {
         for (id subview in [view subviews]) {
             if ([subview isKindOfClass:[UIButton class]]) {

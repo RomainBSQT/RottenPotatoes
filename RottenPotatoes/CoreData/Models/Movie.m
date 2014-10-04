@@ -64,25 +64,25 @@
 
 - (void)serializeWithDict:(NSDictionary *)dict
 {
-    self.abridgedDirectors = [dict extractDataAtKey:@"abridged_directors" withExpectedType:[NSArray class]];
-    self.audienceRating    = [dict[@"ratings"] extractDataAtKey:@"audience_rating" withExpectedType:[NSString class]];
-    self.audienceScore     = [dict[@"ratings"] extractDataAtKey:@"audience_score" withExpectedType:[NSNumber class]];
-    self.criticsConsensus  = [dict extractDataAtKey:@"critics_consensus" withExpectedType:[NSString class]];
-    self.criticsRating     = [dict[@"ratings"] extractDataAtKey:@"critics_rating" withExpectedType:[NSString class]];
-    self.criticsScore      = [dict[@"ratings"] extractDataAtKey:@"critics_score" withExpectedType:[NSNumber class]];
-    self.distantId         = [dict extractDataAtKey:@"id" withExpectedType:[NSString class]];
-    self.genre             = [dict extractDataAtKey:@"genres" withExpectedType:[NSArray class]];
-    self.imdbId            = @([[dict[@"alternate_ids"] extractDataAtKey:@"imdb" withExpectedType:[NSString class]] intValue]);
-    self.links             = [dict extractDataAtKey:@"links" withExpectedType:[NSDictionary class]];
-    self.mpaaRating        = @([[dict extractDataAtKey:@"mpaa_rating" withExpectedType:[NSString class]] intValue]);
-    self.posters           = [dict extractDataAtKey:@"posters" withExpectedType:[NSDictionary class]];
-    self.releaseDvd        = [[dict[@"release_dates"] extractDataAtKey:@"dvd" withExpectedType:[NSDate class]] serializeToDate];
-    self.releaseTheater    = [[dict[@"release_dates"] extractDataAtKey:@"theater" withExpectedType:[NSString class]] serializeToDate];
-    self.runtime           = [dict extractDataAtKey:@"runtime" withExpectedType:[NSNumber class]];
-    self.studio            = [dict extractDataAtKey:@"studio" withExpectedType:[NSString class]];
-    self.synopsis          = [dict extractDataAtKey:@"synopsis" withExpectedType:[NSString class]];
-    self.title             = [dict extractDataAtKey:@"title" withExpectedType:[NSString class]];
-    self.year              = [dict extractDataAtKey:@"year" withExpectedType:[NSNumber class]];
+    self.abridgedDirectors = [dict extractDataAtKey:@"abridged_directors"           withExpectedType:[NSArray class]];
+    self.audienceRating    = [dict[@"ratings"] extractDataAtKey:@"audience_rating"  withExpectedType:[NSString class]];
+    self.audienceScore     = [dict[@"ratings"] extractDataAtKey:@"audience_score"   withExpectedType:[NSNumber class]];
+    self.criticsConsensus  = [dict extractDataAtKey:@"critics_consensus"            withExpectedType:[NSString class]];
+    self.criticsRating     = [dict[@"ratings"] extractDataAtKey:@"critics_rating"   withExpectedType:[NSString class]];
+    self.criticsScore      = [dict[@"ratings"] extractDataAtKey:@"critics_score"    withExpectedType:[NSNumber class]];
+    self.distantId         = [dict extractDataAtKey:@"id"                           withExpectedType:[NSString class]];
+    self.genre             = [dict extractDataAtKey:@"genres"                       withExpectedType:[NSArray class]];
+    self.imdbId            = @([[dict[@"alternate_ids"] extractDataAtKey:@"imdb"    withExpectedType:[NSString class]] intValue]);
+    self.links             = [dict extractDataAtKey:@"links"                        withExpectedType:[NSDictionary class]];
+    self.mpaaRating        = @([[dict extractDataAtKey:@"mpaa_rating"               withExpectedType:[NSString class]] intValue]);
+    self.posters           = [dict extractDataAtKey:@"posters"                      withExpectedType:[NSDictionary class]];
+    self.releaseDvd        = [[dict[@"release_dates"] extractDataAtKey:@"dvd"       withExpectedType:[NSDate class]] serializeToDate];
+    self.releaseTheater    = [[dict[@"release_dates"] extractDataAtKey:@"theater"   withExpectedType:[NSString class]] serializeToDate];
+    self.runtime           = [dict extractDataAtKey:@"runtime"                      withExpectedType:[NSNumber class]];
+    self.studio            = [dict extractDataAtKey:@"studio"                       withExpectedType:[NSString class]];
+    self.synopsis          = [dict extractDataAtKey:@"synopsis"                     withExpectedType:[NSString class]];
+    self.title             = [dict extractDataAtKey:@"title"                        withExpectedType:[NSString class]];
+    self.year              = [dict extractDataAtKey:@"year"                         withExpectedType:[NSNumber class]];
 }
 
 @end

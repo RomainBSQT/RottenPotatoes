@@ -6,6 +6,4 @@
 //  Copyright (c) 2014 Romain Bousquet. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 FOUNDATION_EXPORT CGFloat const kHeightNavStatusBar;

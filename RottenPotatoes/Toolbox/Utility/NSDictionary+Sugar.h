@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Romain Bousquet. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 typedef void (^EachDictSugarCompletionHandler)(id k, id value);
 typedef id (^MapDictSugarCompletionHandler)(id k, id value);
 

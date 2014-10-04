@@ -53,15 +53,15 @@ static NSString *const kSegueId = @"toDetailMovie";
 
 - (void)p_setupNavigationBar
 {
-    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.translucent     = NO;
     self.navigationController.navigationBar.backgroundColor = [UIColor RTPGrayStrong];
     
     CGRect titleViewRect = CGRectMake(0, 0, 170, 30);
     UILabel *title = [UILabel new];
-    title.frame     = titleViewRect;
-    title.textColor = [UIColor whiteColor];
-    title.font      = [UIFont RTPFontBold:18.f];
-    title.text      = NSLocalizedString(@"BOX OFFICE", nil);
+    title.frame         = titleViewRect;
+    title.textColor     = [UIColor whiteColor];
+    title.font          = [UIFont RTPFontBold:18.f];
+    title.text          = NSLocalizedString(@"BOX OFFICE", nil);
     title.textAlignment = NSTextAlignmentCenter;
     self.navigationItem.titleView = title;
 }

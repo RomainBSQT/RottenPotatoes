@@ -51,7 +51,6 @@
 		7A5EF73E1990E6800032B52D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A5EF73D1990E6800032B52D /* CoreData.framework */; };
 		7AAA682F19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA682D19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld */; };
 		7AAA683519927A540048D2E5 /* RTPTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA683419927A540048D2E5 /* RTPTransformer.m */; };
-		7AAA684A199293BE0048D2E5 /* RTPCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,8 +138,6 @@
 		7AAA682E19922E3E0048D2E5 /* RottenPotatoes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RottenPotatoes.xcdatamodel; sourceTree = "<group>"; };
 		7AAA683319927A540048D2E5 /* RTPTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPTransformer.h; sourceTree = "<group>"; };
 		7AAA683419927A540048D2E5 /* RTPTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPTransformer.m; sourceTree = "<group>"; };
-		7AAA6848199293BE0048D2E5 /* RTPCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPCoreDataManager.h; sourceTree = "<group>"; };
-		7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPCoreDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,8 +382,6 @@
 				7AAA682D19922E3E0048D2E5 /* RottenPotatoes.xcdatamodeld */,
 				7AAA683319927A540048D2E5 /* RTPTransformer.h */,
 				7AAA683419927A540048D2E5 /* RTPTransformer.m */,
-				7AAA6848199293BE0048D2E5 /* RTPCoreDataManager.h */,
-				7AAA6849199293BE0048D2E5 /* RTPCoreDataManager.m */,
 				7A2DE41C19938D4A006F5374 /* NSManagedObject+Helper.h */,
 				7A2DE41D19938D4A006F5374 /* NSManagedObject+Helper.m */,
 			);
@@ -515,7 +510,6 @@
 				7A1D97D61990DC780075B2B5 /* main.m in Sources */,
 				309043DB19B4266200AF0D9B /* NSArray+Sugar.m in Sources */,
 				309043DE19B4266200AF0D9B /* NSString+SerializeToDate.m in Sources */,
-				7AAA684A199293BE0048D2E5 /* RTPCoreDataManager.m in Sources */,
 				301B903619AEE93200B296D8 /* RTPMovieManager.m in Sources */,
 				3002261E19C14F1500933612 /* RTPSearchBar.m in Sources */,
 				309043C819B421FE00AF0D9B /* RTPMovieListView.m in Sources */,

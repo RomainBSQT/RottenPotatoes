@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 Romain Bousquet. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 typedef void (^EachArraySugarCompletionHandler)(id obj);
 typedef id (^MapArraySugarCompletionHandler)(id obj);
 

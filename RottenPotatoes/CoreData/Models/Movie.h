@@ -51,10 +51,8 @@ typedef NS_ENUM(char, RTPMpaaRating) {
 @end
 
 @interface Movie (CoreDataGeneratedAccessors)
-
 - (void)addRelationshipObject:(CastMember *)value;
 - (void)removeRelationshipObject:(CastMember *)value;
 - (void)addRelationship:(NSSet *)values;
 - (void)removeRelationship:(NSSet *)values;
-
 @end

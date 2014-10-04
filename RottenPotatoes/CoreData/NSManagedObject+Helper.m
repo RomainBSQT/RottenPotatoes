@@ -8,6 +8,7 @@
 
 #import "NSManagedObject+Helper.h"
 #import "RTPStoreManager.h"
+#import "NSDictionary+Sugar.h"
 
 @implementation NSManagedObjectContext (Helper)
 
@@ -175,8 +176,7 @@
 + (NSSortDescriptor *)p_sortDescriptorFromDictionary:(NSDictionary *)dict
 {
     BOOL isAscending = ![[[dict.allValues firstObject] uppercaseString] isEqualToString:@"DESC"];
-    return [NSSortDescriptor sortDescriptorWithKey:[dict.allKeys firstObject]
-                                         ascending:isAscending];
+    return [NSSortDescriptor sortDescriptorWithKey:[dict.allKeys firstObject] ascending:isAscending];
 }
 
 + (NSSortDescriptor *)p_sortDescriptorFromString:(NSString *)order
@@ -189,16 +189,14 @@
 
 }
 
-+ (NSSortDescriptor *)p_sortDescriptorFromObject:(id)order {
++ (NSSortDescriptor *)p_sortDescriptorFromObject:(id)order
+{
     if ([order isKindOfClass:[NSSortDescriptor class]])
         return order;
-
     if ([order isKindOfClass:[NSString class]])
         return [self p_sortDescriptorFromString:order];
-
     if ([order isKindOfClass:[NSDictionary class]])
         return [self p_sortDescriptorFromDictionary:order];
-
     return nil;
 }
 
