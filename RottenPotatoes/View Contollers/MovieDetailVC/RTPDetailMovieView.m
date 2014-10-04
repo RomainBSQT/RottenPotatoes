@@ -156,6 +156,7 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
 
 - (void)openImdbPage:(id)sender
 {
+    //-- Composing imdb's url
     NSUInteger currentId   = [_currentMovie.imdbId unsignedIntegerValue];
     NSString *currentIdStr = [_currentMovie.imdbId stringValue];
     if (currentId < 1000000) {

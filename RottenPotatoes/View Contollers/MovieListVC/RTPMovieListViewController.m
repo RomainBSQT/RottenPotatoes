@@ -72,6 +72,7 @@ static NSString *const kSegueId = @"toDetailMovie";
 {
     if ([segue.identifier isEqualToString:kSegueId]) {
         RTPMovieDetailViewController *dvc = (RTPMovieDetailViewController *)[segue destinationViewController];
+        [dvc.navigationController setNavigationBarHidden:YES animated:NO];
         dvc.currentMovie = _selectedMovie;
     }
 }

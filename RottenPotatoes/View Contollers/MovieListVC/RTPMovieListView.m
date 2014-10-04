@@ -12,6 +12,7 @@
 #import "RTPSearchHeaderView.h"
 #import "NSDictionary+TypeCheck.h"
 #import "RTPWebServiceDialogManager.h"
+#import "UIImageView+RTPDownloadImage.h"
 #import "Movie.h"
 
 static CGFloat const kInterItemSpacing = 2.f;
@@ -20,13 +21,13 @@ static CGFloat const kHeightCell       = kWidthCell * 1.3333f;
 static CGFloat const kHeightHeader     = 45.f;
 
 @interface RTPMovieListView () <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchDisplayDelegate, UITableViewDelegate, UITableViewDataSource>
-@property (strong, nonatomic) UICollectionView  *collectionView;
-@property (strong, nonatomic) UIRefreshControl  *refresh;
-@property (strong, nonatomic) NSMutableArray    *movieArray;
-@property (strong, nonatomic) NSArray           *filteredArray;
+@property (strong, nonatomic) UICollectionView          *collectionView;
+@property (strong, nonatomic) UIRefreshControl          *refresh;
+@property (strong, nonatomic) NSMutableArray            *movieArray;
+@property (strong, nonatomic) NSArray                   *filteredArray;
 @property (strong, nonatomic) UISearchDisplayController *searchBarController;
-@property (strong, nonatomic) RTPSearchBar      *searchBar;
-@property (weak, nonatomic) UIViewController    *controller;
+@property (strong, nonatomic) RTPSearchBar              *searchBar;
+@property (weak, nonatomic) UIViewController            *controller;
 @end
 
 @implementation RTPMovieListView
@@ -155,7 +156,7 @@ static CGFloat const kHeightHeader     = 45.f;
     return UIEdgeInsetsMake(kInterItemSpacing, kInterItemSpacing, kInterItemSpacing, kInterItemSpacing);
 }
 
-#pragma mark - UITableViewDelegate
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -169,12 +170,17 @@ static CGFloat const kHeightHeader     = 45.f;
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseId];
     }
-    cell.textLabel.text  = [_filteredArray[indexPath.row] title];
+    cell.textLabel.text = [_filteredArray[indexPath.row] title];
     NSURL *urlPicture = [NSURL URLWithString:[[_filteredArray[indexPath.row] posters] extractDataAtKey:@"original" withExpectedType:[NSString class]]];
-    [[RTPWebServiceDialogManager sharedInstance] downloadPictureWithUrl:urlPicture completionHandler:^(UIImage *picture, BOOL isFromCache) {
-        cell.imageView.image = picture;
-    }];
+    [cell.imageView downloadImageWithUrl:urlPicture];
     return cell;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.delegate itemSelected:_filteredArray[indexPath.row]];
 }
 
 #pragma mark - UISearchDisplayDelegate

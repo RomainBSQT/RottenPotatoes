@@ -33,7 +33,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     self.view.backgroundColor = [UIColor blackColor];
     
@@ -54,6 +53,13 @@
     [self.tankView addSubview:_moreDetailsMovieView];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationNone];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -69,14 +75,14 @@
 
 - (void)toDetails
 {
-    [UIView animateWithDuration:0.4f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.7f delay:0.1f usingSpringWithDamping:0.4f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.tankView.frame = detailsFrame;
     } completion:nil];
 }
 
 - (void)toMoreDetails
 {
-    [UIView animateWithDuration:0.4f delay:0.1f usingSpringWithDamping:0.6f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.7f delay:0.1f usingSpringWithDamping:0.4f initialSpringVelocity:1.f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.tankView.frame = moreDetailsFrame;
     } completion:nil];
 }
