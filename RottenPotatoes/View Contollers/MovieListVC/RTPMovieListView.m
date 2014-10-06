@@ -181,7 +181,7 @@ static CGFloat const kHeightHeader     = 45.f;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.delegate itemSelected:_filteredArray[indexPath.row]];
-    [self.searchBarController setActive:NO];
+    [self.searchBarController setActive:NO animated:NO];
 }
 
 #pragma mark - UISearchDisplayDelegate
