@@ -40,8 +40,8 @@ static CGFloat const kButtonSize = 35.f;
     UIImageView *pictureView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, picture.size.width, picture.size.height)];
     pictureView.image = picture;
     _showLessDetails = [UIButton new];
-    [_showLessDetails addSubview:pictureView];
     _showLessDetails.frame = CGRectMake(CGRectGetMidX(self.bounds) - picture.size.width/2, kMargin, kButtonSize*1.15, kButtonSize*1.15);
+    [_showLessDetails addSubview:pictureView];
     [_showLessDetails addTarget:self action:@selector(showDetails:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_showLessDetails];
 }

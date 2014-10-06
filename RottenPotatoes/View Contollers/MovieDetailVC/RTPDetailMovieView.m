@@ -13,7 +13,7 @@
 #import "Movie.h"
 
 static CGFloat const kHeightPicture  = 425.6f; // 320*133/100
-static CGFloat const kHeightGradient = 70.f; // 320*133/100
+static CGFloat const kHeightGradient = 70.f;   // 320*133/100
 static CGFloat const kButtonSize     = 35.f;
 static CGFloat const kMargin         = 15.f;
 static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
@@ -63,7 +63,7 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
 {
     gradientView = [UIView new];
     gradientView.backgroundColor = [UIColor blackColor];
-    gradientView.frame = CGRectMake(0, kHeightPicture - kHeightGradient, CGRectGetWidth(self.bounds), kHeightGradient);
+    gradientView.frame           = CGRectMake(0, kHeightPicture - kHeightGradient, CGRectGetWidth(self.bounds), kHeightGradient);
     [self addSubview:gradientView];
     if (!maskLayer) {
         maskLayer = [CAGradientLayer layer];
@@ -85,12 +85,12 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
     UIImageView *closePicture = [UIImageView new];
     UIView *bgView            = [UIView new];
     bgView.userInteractionEnabled = NO;
-    bgView.backgroundColor    = [UIColor blackColor];
-    bgView.alpha              = 0.5f;
-    backButton.frame          = CGRectMake(kMargin, kMargin, kButtonSize, kButtonSize);
-    closePicture.frame        = CGRectMake(CGRectGetMidX(backButton.bounds) - (picture.size.width/2), CGRectGetMidY(backButton.bounds) - (picture.size.height/2), picture.size.width, picture.size.height);
-    closePicture.image        = picture;
-    bgView.frame              = backButton.bounds;
+    bgView.backgroundColor        = [UIColor blackColor];
+    bgView.alpha                  = 0.5f;
+    backButton.frame              = CGRectMake(kMargin, kMargin, kButtonSize, kButtonSize);
+    closePicture.frame            = CGRectMake(CGRectGetMidX(backButton.bounds) - (picture.size.width/2), CGRectGetMidY(backButton.bounds) - (picture.size.height/2), picture.size.width, picture.size.height);
+    closePicture.image            = picture;
+    bgView.frame                  = backButton.bounds;
     [backButton addSubview:bgView];
     [backButton addSubview:closePicture];
     [backButton addTarget:self action:@selector(backButton:) forControlEvents:UIControlEventTouchUpInside];
@@ -99,19 +99,20 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
 
 - (void)p_setupRating
 {
-    CGFloat rating = ([_currentMovie.audienceScore floatValue] + [_currentMovie.criticsScore floatValue])/2;
+    CGFloat rating      = ([_currentMovie.audienceScore floatValue] + [_currentMovie.criticsScore floatValue])/2;
     NSString *ratingStr = [NSString stringWithFormat:@"%.0f%%", rating];
     UIFont *currentFont = [UIFont RTPFontRegular:35.f];
     NSDictionary *attr  = @{NSFontAttributeName:currentFont};
+    
     NSMutableAttributedString *attrText = [[NSMutableAttributedString alloc] initWithString:ratingStr attributes:attr];
     NSRange percentRange = [ratingStr rangeOfString:@"%"];
     [attrText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:currentFont.fontName size:20.f]} range:percentRange];
     CGSize sizeLabel = [ratingStr sizeWithAttributes:@{NSFontAttributeName:currentFont}];
     
     _rating = [UILabel new];
-    _rating.frame = CGRectMake(CGRectGetWidth(self.bounds) - kMargin - sizeLabel.width, CGRectGetHeight(self.bounds) - kMargin - sizeLabel.height, sizeLabel.width, sizeLabel.height);
+    _rating.frame          = CGRectMake(CGRectGetWidth(self.bounds) - kMargin - sizeLabel.width, CGRectGetHeight(self.bounds) - kMargin - sizeLabel.height, sizeLabel.width, sizeLabel.height);
     _rating.attributedText = attrText;
-    _rating.textColor = [UIColor whiteColor];
+    _rating.textColor      = [UIColor whiteColor];
     [self addSubview:_rating];
 }
 
@@ -122,9 +123,9 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
     CGSize sizeLabel    = [titleStr sizeWithAttributes:@{NSFontAttributeName:currentFont}];
     
     _title = [UILabel new];
-    _title.frame = CGRectMake(kMargin, CGRectGetHeight(self.bounds) - (kMargin*1.5) - sizeLabel.height, sizeLabel.width, sizeLabel.height);
-    _title.text = titleStr;
-    _title.font = currentFont;
+    _title.frame     = CGRectMake(kMargin, CGRectGetHeight(self.bounds) - (kMargin*1.5) - sizeLabel.height, sizeLabel.width, sizeLabel.height);
+    _title.text      = titleStr;
+    _title.font      = currentFont;
     _title.textColor = [UIColor whiteColor];
     [self addSubview:_title];
 }

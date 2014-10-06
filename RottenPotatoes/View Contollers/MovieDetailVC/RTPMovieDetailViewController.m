@@ -25,7 +25,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -36,9 +35,11 @@
     [self.navigationController setNavigationBarHidden:YES animated:NO];
     self.view.backgroundColor = [UIColor blackColor];
     
+    //-- Setting frames for animations
     detailsFrame     = CGRectMake(0, 0, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)*2);
     moreDetailsFrame = CGRectMake(0, -CGRectGetHeight(self.view.bounds), CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds)*2);
     
+    //-- Setting subivews
     self.tankView = [UIView new];
     self.tankView.frame           = detailsFrame;
     self.tankView.backgroundColor = [UIColor blackColor];

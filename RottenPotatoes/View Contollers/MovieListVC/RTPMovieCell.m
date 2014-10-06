@@ -22,7 +22,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.contentView.backgroundColor = [UIColor grayWithRGB:235.f];
-        self.contentView.clipsToBounds = YES;
+        self.contentView.clipsToBounds   = YES;
         [self p_setupPicture];
     }
     return self;
@@ -33,9 +33,9 @@
 - (void)p_setupPicture
 {
     _poster = [UIImageView new];
-    _poster.frame = self.bounds;
+    _poster.frame       = self.bounds;
     _poster.contentMode = UIViewContentModeScaleToFill;
-    _poster.alpha = 0.f;
+    _poster.alpha       = 0.f;
     [self.contentView addSubview:_poster];
 }
 

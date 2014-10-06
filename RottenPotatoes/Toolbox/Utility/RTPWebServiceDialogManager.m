@@ -39,7 +39,6 @@
         sessionConfiguration.timeoutIntervalForRequest  = 30.f;
         sessionConfiguration.timeoutIntervalForResource = 60.f;
         _currentSession = [NSURLSession sessionWithConfiguration:sessionConfiguration delegate:self delegateQueue:nil];
-        
         _pictureDownloadQueue = [NSOperationQueue new];
         _pictureDownloadQueue.maxConcurrentOperationCount = 6;
         _pictureCache = [NSCache new];
