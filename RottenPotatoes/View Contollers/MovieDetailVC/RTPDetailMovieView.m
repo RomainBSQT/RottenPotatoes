@@ -25,6 +25,7 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
 @property (strong, nonatomic) UIImageView *picture;
 @property (strong, nonatomic) UILabel     *rating;
 @property (strong, nonatomic) UILabel     *title;
+@property (strong, nonatomic) UILabel     *synopsisLabel;
 @property (strong, nonatomic) UIButton    *imdbPageLink;
 @property (strong, nonatomic) UIButton    *showMoreDetails;
 @property (weak, nonatomic) Movie *currentMovie;
@@ -151,6 +152,16 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
     [_showMoreDetails addSubview:pictureView];
     [_showMoreDetails addTarget:self action:@selector(showDetails:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_showMoreDetails];
+    
+    NSString *synopsisStr = NSLocalizedString(@"Synopsis", nil);
+    UIFont *currentFont   = [UIFont RTPFontRegular:10.f];
+    CGSize sizeLabel      = [synopsisStr sizeWithAttributes:@{NSFontAttributeName:currentFont}];
+    _synopsisLabel = [UILabel new];
+    _synopsisLabel.frame     = CGRectMake(CGRectGetMidX(self.bounds) - sizeLabel.width/2, CGRectGetMinY(_showMoreDetails.frame) - sizeLabel.height - kMargin/2, sizeLabel.width, sizeLabel.height);
+    _synopsisLabel.text      = synopsisStr;
+    _synopsisLabel.font      = currentFont;
+    _synopsisLabel.textColor = [UIColor whiteColor];
+    [self addSubview:_synopsisLabel];
 }
 
 #pragma mark - User interactions
