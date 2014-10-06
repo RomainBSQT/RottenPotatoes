@@ -16,7 +16,6 @@ static NSString *const kArchivePath = @"/models";
 {
     self = [super init];
     if (self) {
-        NCLog(@"%@", NSStringFromClass([self class]));
     }
     return self;
 }

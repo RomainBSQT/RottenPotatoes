@@ -166,7 +166,6 @@ static NSString *const kUrlImdb      = @"http://www.imdb.com/title/tt";
         }
     }
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@/", kUrlImdb, currentIdStr]];
-    NCLog(@"URL :%@", url);
     if (![[UIApplication sharedApplication] openURL:url]) {
         NCLog(@"%@%@",@"Failed to open url:", [url description]);
     }
