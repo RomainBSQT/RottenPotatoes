@@ -7,8 +7,6 @@
 //
 
 #import "RTPAppDelegate.h"
-#import "RTPWebServiceDialogManager.h"
-
 #import "RTPMovieManager.h"
 
 @implementation RTPAppDelegate

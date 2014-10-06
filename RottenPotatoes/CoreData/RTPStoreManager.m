@@ -72,6 +72,15 @@
     return successful;
 }
 
+//#pragma mark - Debug method
+//
+//- (void)deleteAllEntries
+//{
+//    for (Movie *movie in [Movie all]) {
+//        [movie deleteEntry];
+//    }
+//}
+
 #pragma mark - SQLite file directory
 
 - (NSURL *)applicationDocumentsDirectory

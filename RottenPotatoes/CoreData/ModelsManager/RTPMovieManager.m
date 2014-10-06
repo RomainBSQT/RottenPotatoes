@@ -37,7 +37,6 @@ static CGFloat const kTimeRefresh = 3600.f * 24.f; //- one day
 {
     self = [super init];
     if (self) {
-        
     }
     return self;
 }
@@ -92,6 +91,5 @@ static CGFloat const kTimeRefresh = 3600.f * 24.f; //- one day
     [newMovie serializeWithDict:dict];
     [newMovie save];
 }
-
 
 @end

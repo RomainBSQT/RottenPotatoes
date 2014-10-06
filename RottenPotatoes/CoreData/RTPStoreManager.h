@@ -17,4 +17,5 @@
 @property (copy, nonatomic) NSString *modelName;
 + (instancetype)sharedInstance;
 - (BOOL)saveChanges;
+//- (void)deleteAllEntries; //-- Debug
 @end
